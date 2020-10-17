@@ -2,11 +2,11 @@
 console.log("Client side JavaScript file loaded")
 
 //fetch API
-fetch('http://puzzle.mead.io/i').then((response) =>{
-    response.json().then((data)=>{
-        console.log(data)
-    })
-})
+// fetch('http://puzzle.mead.io/i').then((response) =>{
+//     response.json().then((data)=>{
+//         console.log(data)
+//     })
+// })
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const message_1 = document.querySelector('#message-1')
@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit',(event)=>{
         message_1.textContent='Please enter Location'
     }else{
         const location = search.value
-    fetch('http://localhost:3000/weather?address='+location).then((response)=>{
+    fetch('/weather?address='+location).then((response)=>{
     response.json().then((data)=>{
         if(data.locationNotFound){
             message_1.textContent =data.locationNotFound
