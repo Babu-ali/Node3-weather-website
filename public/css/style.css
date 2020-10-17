@@ -60,14 +60,3 @@ button{
     background-size: initial;
 } */
 
-html, body, .container {
-    height: 100%;
-}
-
-#top-div, #bottom-div {
-    height: 10%;
-}
-
-#chat-and-users {
-    height: 80%;
-}
