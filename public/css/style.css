@@ -1,3 +1,6 @@
+html{
+    height: 100%;
+}
 body{
     color: #333333;
     font-family: Arial;
@@ -6,7 +9,7 @@ body{
     padding: 0 16px;
     background-color: lightblue;
 
-
+    height: 100%;
     display: flex;
     flex-direction: column;
     min-height: 100vh
@@ -14,17 +17,20 @@ body{
 
 .main-content{
     flex-grow:1;
+    height: 80%;
 }
 footer{
     color: #888888;
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding:16px 0;
+    height: 10%;
 
 }
 header{
     margin-top: 16px;
     margin-bottom: 48px;
+    height: 10%;
 }
 h1{
     font-size: 64px;
@@ -53,3 +59,15 @@ button{
     background-image:url('../images/cloud.jpg');
     background-size: initial;
 } */
+
+html, body, .container {
+    height: 100%;
+}
+
+#top-div, #bottom-div {
+    height: 10%;
+}
+
+#chat-and-users {
+    height: 80%;
+}
